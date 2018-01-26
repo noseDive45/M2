@@ -27,7 +27,7 @@ public class Person3 {
 	 * @return the string representing the
 	 *         object
 	 */
-	public String toString(String input) {
+	public String toString() {
 	  return name + ": The Bird Man";
 	}
 }
