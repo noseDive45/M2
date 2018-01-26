@@ -2,9 +2,9 @@ package edu.gatech.oad.antlab.person;
 /**
  *  A simple class for person 3
  *  returns their name and a
- *  nickname
+ *  reversed string
  *
- *  @author  Jackson Cook
+ *  @author  Jackson
  *  @version 1.1
  */
 public class Person3 {
@@ -22,12 +22,35 @@ public class Person3 {
 
 	/**
 	 * Return a string rep of this object
-	 * with a nickname
+	 * that varies with an input string
 	 *
+	 * @param input the varying string
 	 * @return the string representing the
 	 *         object
 	 */
 	public String toString(String input) {
-	  return name + ": The Bird Man";
+	  return name + calc(input);
+	}
+
+	/**
+	 * This method should take the string
+	 * input and return its reverse.
+	 * given "gtg123b" it should return
+	 * b321gtg.
+	 *
+	 * @param input the string to be reversed
+	 * @return the reversed string
+	 */
+	private String calc(String input) {
+	  //Person 3 put your implementation here
+	  return calcRec(input, "");
+	}
+
+	private String calcRec(String input, String output) {
+		if (input.length() == 0) {
+			return output;
+		}
+		output += input.charAt(input.length() - 1);
+		return calcRec(input.substring(0, input.length() - 1), output);
 	}
 }
