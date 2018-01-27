@@ -10,10 +10,6 @@ jar {
     }
 }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     compile files('lib/resources.jar')
 }
