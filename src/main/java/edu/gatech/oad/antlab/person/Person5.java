@@ -31,7 +31,7 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  String toReturn = "";
-	  toRetrun = input.substring(2,input.length()) + input.substring(0,2);
+	  toReturn = input.substring(2,input.length()) + input.substring(0,2);
 	  return toReturn;
 	}
 	
